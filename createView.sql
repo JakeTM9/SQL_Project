@@ -1,0 +1,17 @@
+USE [School]
+GO
+
+CREATE VIEW [A STUDENTS] AS
+SELECT S.[STD_CODE]
+    ,[STD_FNAME]
+    ,[STD_LNAME]
+    ,[STD_CUM_GPA]
+    ,[STD_START_DATE]
+	,[ENR_CODE]
+	,[ENR_GRADE]
+	,[ENR_START_DATE]
+	,[ENR_END_DATE]
+	,[CRS_CODE]
+FROM [dbo].[Student] S INNER JOIN [dbo].[Enrollment] E
+ON S.[STD_CODE] = E.[STD_CODE]
+WHERE [ENR_GRADE] = 'A' OR [ENR_GRADE] = 'A-';

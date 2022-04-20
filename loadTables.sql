@@ -26,7 +26,7 @@ INSERT INTO [dbo].[Department]
 		   (0002,N'Department of Writers',100000,N'A description of the department of Writing',N'2011-01-01'),
 		   (0003,N'Department of Math',200000,N'A description of the department of Math',N'2012-01-01'),
 		   (0004,N'Department of Historians',600000,N'A description of the department of History',N'2013-01-01'),
-		   (0005,N'Department of Literature',800000,N'A description of the department of Engineering',N'2014-01-01')
+		   (0005,N'Department of Literature',8000000,N'A description of the department of Engineering',N'2014-01-01')
 GO
 
 INSERT INTO [dbo].[Instructor]
@@ -68,9 +68,9 @@ INSERT INTO [dbo].[Enrollment]
            ,[CRS_CODE]
            ,[STD_CODE])
      VALUES
-           (0001,N'A',N'2022-05-01',N'2022-08-12',0005,0003),
+           (0001,N'B',N'2022-05-01',N'2022-08-12',0005,0003),
 		   (0002,N'A',N'2022-05-01',N'2022-08-12',0004,0004),
-		   (0003,N'A',N'2022-05-01',N'2022-08-12',0003,0005),
-		   (0004,N'A',N'2022-05-01',N'2022-08-12',0002,0001),
-		   (0005,N'A',N'2022-05-01',N'2022-08-12',0001,0002)
+		   (0003,N'C-',N'2022-05-01',N'2022-08-12',0003,0005),
+		   (0004,N'A-',N'2022-05-01',N'2022-08-12',0002,0001),
+		   (0005,N'D',N'2022-05-01',N'2022-08-12',0001,0002)
 GO
